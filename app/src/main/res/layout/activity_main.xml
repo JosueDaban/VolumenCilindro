@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Título -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calculadora de Volúmenes"
+            android:textSize="20sp"
+            android:layout_gravity="center_horizontal"
+            android:textStyle="bold"/>
+
+        <!-- Cilindro -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cilindro"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp"/>
+
+        <EditText
+            android:id="@+id/editTextRadioCilindro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Radio del cilindro"
+            android:inputType="numberDecimal"/>
+
+        <EditText
+            android:id="@+id/editTextAlturaCilindro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Altura del cilindro"
+            android:inputType="numberDecimal"/>
+
+        <Button
+            android:id="@+id/buttonCalcularCilindro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calcular Volumen Cilindro"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/textViewResultadoCilindro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resultado: "
+            android:textSize="18sp"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center_horizontal"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Paralelepípedo"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp"/>
+
+        <EditText
+            android:id="@+id/editTextLargoParalelepipedo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Largo del paralelepípedo"
+            android:inputType="numberDecimal"/>
+
+        <EditText
+            android:id="@+id/editTextAnchoParalelepipedo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ancho del paralelepípedo"
+            android:inputType="numberDecimal"/>
+
+        <EditText
+            android:id="@+id/editTextAlturaParalelepipedo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Altura del paralelepípedo"
+            android:inputType="numberDecimal"/>
+
+        <Button
+            android:id="@+id/buttonCalcularParalelepipedo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calcular Volumen Paralelepípedo"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"/>
+
+
+        <TextView
+            android:id="@+id/textViewResultadoParalele"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resultado: "
+            android:textSize="18sp"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center_horizontal"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
